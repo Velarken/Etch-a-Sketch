@@ -16,7 +16,11 @@ pageColor.addEventListener('click', changePageTheme);
 function getCanvasSize() {
     var canvasSize = prompt("How large should the canvas be?");
     Number(canvasSize);
-    generateGrid(canvasSize);
+    if (canvasSize > 100) {
+        alert('Too large, must be a number between 1 - 100!');
+    } else {
+        generateGrid(canvasSize);
+    }
 }
 
 function changePageTheme() {
