@@ -1,6 +1,11 @@
 * {
     font-family: sans-serif;
 }
+
+body {
+    background-color: teal;
+}
+
 #pageContent {
     display:flex;
     align-items: center;
@@ -17,8 +22,9 @@
     width:70vmin;
     height:70vmin;
     box-sizing: border-box;
-    border:4px outset black;
+    border:4px outset rgb(12, 168, 168);
     margin-top:50px;
+    border-radius:8px;
 }
 
 #gridContainer .column {
@@ -31,5 +37,15 @@
     flex:1;
     background-color: teal;
     border:1px dotted rgb(2, 100, 100);
-    
 }
+
+button {
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    padding:10px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
